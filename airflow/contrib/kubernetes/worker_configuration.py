@@ -177,7 +177,7 @@ class WorkerConfiguration(LoggingMixin):
         annotations = {
             'iam.cloud.google.com/service-account': gcp_sa_key
         } if gcp_sa_key else {}
-    
+
         return Pod(
             namespace=namespace,
             name=pod_id,
